@@ -1,0 +1,341 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 70px;
+}
+.logo img{
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+
+}
+nav ul{
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+nav ul li{
+    padding-top: 20px;
+    list-style: none;
+    margin-inline: 30px;
+}
+nav ul li a{
+  color: blue;
+    text-decoration: none;
+}
+nav ul li:hover a{
+    color:rgba(253, 189, 49);
+    transition: 0.3s;
+}
+nav ul button{
+ width: 100px;
+ height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(253, 189, 49);
+    color: #01132d;
+ margin-top: 15px;
+
+}
+.wrapper{
+	overflow: hidden;
+	max-width: 390px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  }
+  .wrapper .title-text{
+	display: flex;
+	width: 200%;
+  }
+  .wrapper .title{
+	width: 50%;
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .wrapper .slide-controls{
+	position: relative;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	margin: 30px 0 10px 0;
+	justify-content: space-between;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+  }
+  .slide-controls .slide{
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 48px;
+	cursor: pointer;
+	z-index: 1;
+	transition: all 0.6s ease;
+  }
+  .slide-controls label.signup{
+	color: #000;
+  }
+  .slide-controls .slider-tab{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	z-index: 0;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+	display: none;
+  }
+  #signup:checked ~ .slider-tab{
+	left: 50%;
+  }
+  #signup:checked ~ label.signup{
+	color: #fff;
+	cursor: default;
+	user-select: none;
+  }
+  #signup:checked ~ label.login{
+	color: #000;
+  }
+  #login:checked ~ label.signup{
+	color: #000;
+  }
+  #login:checked ~ label.login{
+	cursor: default;
+	user-select: none;
+  }
+  .wrapper .form-container{
+	width: 100%;
+	overflow: hidden;
+  }
+  .form-container .form-inner{
+	display: flex;
+	width: 200%;
+  }
+  .form-container .form-inner form{
+	width: 50%;
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-inner form .field{
+	height: 50px;
+	width: 100%;
+	margin-top: 20px;
+  }
+  .form-inner form .field input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding-left: 15px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	border-bottom-width: 2px;
+	font-size: 17px;
+	transition: all 0.3s ease;
+  }
+  .form-inner form .field input:focus{
+	border-color: #fc83bb;
+	/* box-shadow: inset 0 0 3px #fb6aae; */
+  }
+  .form-inner form .field input::placeholder{
+	color: #999;
+	transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder{
+	color: #b3b3b3;
+  }
+  .form-inner form .pass-link{
+	margin-top: 5px;
+  }
+  .form-inner form .signup-link{
+	text-align: center;
+	margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+	color: #fa4299;
+	text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+	text-decoration: underline;
+  }
+  form .btn{
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+  }
+  form .btn .btn-layer{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+	border-radius: 5px;
+	transition: all 0.4s ease;;
+  }
+  form .btn:hover .btn-layer{
+	left: 0;
+  }
+  form .btn input[type="submit"]{
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	background: none;
+	border: none;
+	color: #fff;
+	padding-left: 0;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+  }
+  i{
+    cursor: pointer;
+    color:blue;
+    animation: navbar 1s ease forwards;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+/* header */
+h1{
+  text-align: center;
+  color: gray;
+}
+p{
+  text-align: center;
+}
+/* header */
+
+/* Portfolio */
+
+.card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 2400px;
+
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0;
+}
+.cards-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card {
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  margin: 25px 0;
+  width:60vw;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+}
+.card .elms-animation,
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.card .elms-animation {
+  z-index: 5;
+}
+.card .elms-animation span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  height: 0;
+  width: 0;
+  transition: all .5s ease-out;
+}
+.card .elms-animation span.one {
+  top: 0; left: 0;
+}
+.card .elms-animation span.two {
+  top: 0; right: 0;
+}
+.card .elms-animation span.three {
+  left: 0; bottom: 0;
+}
+.card .elms-animation span.four {
+  right: 0; bottom: 0;
+}
+
+.card:hover .elms-animation span {
+  width: 50%;
+  height: 50%;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card .content {
+  z-index: 6;
+  visibility: hidden;
+}
+.card:hover .content {
+  animation: show .3s .4s linear forwards;
+}
+.card .content button {
+  padding: .6rem 1.3rem;
+  border: 3px solid #FFF;
+  background: transparent;
+  color: #FFF;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+.card .content button:hover {
+  background: #FFF;
+  color: #333;
+}
+
+@keyframes show {
+  to {
+    visibility: visible;
+  }
+}
+
+
